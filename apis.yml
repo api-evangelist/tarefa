@@ -1,7 +1,28 @@
 aid: tarefa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tarefa.png
 name: Tarefa
-description: Tarefa is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Tarefa (tarefa.co) is an online study companion — "tu compañero de estudio" —
+  for Spanish-speaking university and high-school students, offering structured
+  learning paths, solved exercises ("ejercicios resueltos"), video tutorials, and
+  practice materials across mathematics (calculus, differential equations,
+  probability and statistics, numerical methods), physics (electromagnetism,
+  Newtonian mechanics, energy), and chemistry (inorganic, organic, gas laws,
+  atomic structure, electrochemistry). It is a subscription-based B2C EdTech
+  platform backed by 500 Global. Tarefa exposes no public developer API or
+  documentation at this time; this profile captures its public web surface and
+  domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/tarefa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Education
+- EdTech
+- E-Learning
+- Online Courses
+- STEM
+- Mathematics
+- Physics
+- Chemistry
+- Latin America
+- Spanish
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tarefa-domain-security.yml
 - type: Website
   url: https://tarefa.co
+- type: SignUp
+  url: https://tarefa.co/registro/
+- type: Login
+  url: https://tarefa.co/accounts/login
+- type: Pricing
+  url: https://tarefa.co/memberships/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
